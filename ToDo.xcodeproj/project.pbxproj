@@ -32,6 +32,7 @@
 		0F28F3AB29CA7D480097467C /* TaskDB+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaskDB+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		0F28F48A29D4F2A60097467C /* TextFieldLimitModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldLimitModifier.swift; sourceTree = "<group>"; };
 		0F28F48C29D5EFB20097467C /* EditTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskView.swift; sourceTree = "<group>"; };
+		0F28F48E29DE171B0097467C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0F455F1229BB7C4B00F9DCBD /* ToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F455F1529BB7C4B00F9DCBD /* ToDoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoApp.swift; sourceTree = "<group>"; };
 		0F455F1729BB7C4B00F9DCBD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +60,7 @@
 		0F455F0929BB7C4B00F9DCBD = {
 			isa = PBXGroup;
 			children = (
+				0F28F48E29DE171B0097467C /* README.md */,
 				0F455F1429BB7C4B00F9DCBD /* ToDo */,
 				0F455F1329BB7C4B00F9DCBD /* Products */,
 			);
