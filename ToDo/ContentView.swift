@@ -17,14 +17,6 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-//                Section("Priority"){
-//                    Picker("Priority", selection: $testing) {
-//                        Text("Test1")
-//                            .tag("1")
-//                        Text("Text2")
-//                            .tag("2")
-//                    }
-//                }
                 SortPickerView(sortType: $tasksVM.sortType)
                 TaskListView(tasksVM: tasksVM)
             }
@@ -39,12 +31,6 @@ struct ContentView: View {
                         isAddPresented = true
                     }
                 }
-                
-//                ToolbarItem {
-//                    Button("Edit") {
-//                        isEditPresented = true
-//                    }
-//                }
             }
         }
         .onAppear {

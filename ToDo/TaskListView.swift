@@ -15,33 +15,7 @@ struct TaskListView: View {
         List {
             ForEach(0..<tasksVM.sortedTasks.count, id: \.self) { task in
                 ProcessTaskRowView(task: tasksVM.sortedTasks[task],tasksVM: tasksVM, index: task).tag(tasksVM.sortedTasks[task].id)
-                //Text(tasksVM.sortedTasks[task].name)
-//                TaskView(tasksVM: tasksVM, task: tasksVM.sortedTasks[task])
-//                    .listRowSeparator(.hidden)
-//                    .swipeActions(allowsFullSwipe: false) {
-//                        NavigationLink(destination: EditTaskView(tasksVM: tasksVM, taskID: tasksVM.sortedTasks[task].id)) {
-//                            //Label("Edit", systemImage: "pencil")
-//                            Button {
-//                                showEdit = true
-//                            } label: {
-//                                Label("Edit", systemImage: "pencil")
-//                            }
-//                            .tint(.yellow)
-//                        }
-//                        .isDetailLink(false)
-//                        .tint(.yellow)
-//
-////
-////                        .sheet(isPresented: $showEdit) {
-////                            EditTaskView(tasksVM: tasksVM, taskID: tasksVM.sortedTasks[task].id)
-////                        }
-//
-//                        Button(role: .destructive) {
-//                            tasksVM.remove(at: IndexSet(arrayLiteral: task))
-//                        } label: {
-//                            Label("Delete", systemImage: "trash.fill")
-//                        }
-//                    }
+                    .listRowSeparator(.hidden)
             }
             .onDelete(perform: tasksVM.remove)
         }
@@ -68,13 +42,16 @@ struct ProcessTaskRowView: View {
 
     var body: some View {
         // by default navigate as-is
-        NavigationLink(destination: destination, isActive: $isActive) {
-            VStack{
-                
-                TaskView(tasksVM: tasksVM, task: tasksVM.sortedTasks[index])
-                    .listRowSeparator(.hidden)
+        ZStack {
+            NavigationLink(destination: destination, isActive: $isActive) {
+                EmptyView()
             }
+            .opacity(0)
+            
+            TaskView(tasksVM: tasksVM, task: tasksVM.sortedTasks[index])
+                //.listRowSeparator(.hidden)
         }
+        //.listRowSeparator(.hidden)
         .swipeActions() {
             Button(role: .destructive) {
                 tasksVM.remove(at: IndexSet(arrayLiteral: index))
@@ -104,7 +81,7 @@ struct ProcessTaskRowView: View {
             EditTaskView(tasksVM: tasksVM, taskID: tasksVM.sortedTasks[index].id)
         } else {
             // just to demo different type destinations
-            Color.yellow.overlay(Text("MeasurementsView"))
+            DetailsView(tasksVM: tasksVM, taskID: tasksVM.sortedTasks[index].id)
         }
     }
 }

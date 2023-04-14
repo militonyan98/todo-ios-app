@@ -68,17 +68,6 @@ struct TaskView: View {
                 .foregroundColor(task.priority.color.opacity(0.4))
                 //.stroke(task.priority.color, lineWidth: 2)
         }
-//        .background(NavigationLink(
-//            destination: EditTaskView(tasksVM: tasksVM, taskID: task.id),
-//            isActive: $isEditPresented) {
-//
-//        })
-        .sheet(isPresented: $isEditPresented) {
-            EditTaskView(tasksVM: tasksVM, taskID: task.id)
-        }
-        .onTapGesture {
-            isEditPresented = true
-        }
     }
 }
 

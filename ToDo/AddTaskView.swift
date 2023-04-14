@@ -9,7 +9,12 @@ import SwiftUI
 import CoreData
 
 struct AddTaskView: View {
-    //@FetchRequest (sortDescriptors: []) var taskDB: FetchedResults<TaskDB>
+    enum FocusedField {
+        case task, description
+    }
+    
+    @FocusState private var focusedField: FocusedField?
+    
     @ObservedObject var tasksVM: TaskViewModel
     @Environment(\.dismiss) var dismiss
     @State private var task = ""
@@ -17,26 +22,28 @@ struct AddTaskView: View {
     @State private var priority: Priority = .normal
     @State private var date = Date.now
     
-    @State var testing = "1"
-    
     var disabledSave: Bool {
-        if !self.task.isEmpty && !self.description.isEmpty {
-            return false
-        }
-        
-        return true
+        self.task.isEmpty || self.description.isEmpty
     }
     
     var body: some View {
-        
         NavigationView {
-            
             VStack {
                 Form {
                     Section("Task") {
                         TextField("Task", text: $task)
-                            .limitInputLength(value: $task, length: 15)
-                        TextField("Description", text: $description)
+                            .limitInputLength(value: $task, length: 20)
+                            .disableAutocorrection(true)
+                            .textInputAutocapitalization(.sentences)
+                            .submitLabel(.done)
+                            .focused($focusedField, equals: .task)
+                        TextField("Description", text: $description, axis: .vertical)
+                            .limitInputLength(value: $description, length: 100)
+                            .lineLimit(3, reservesSpace: true)
+                            .disableAutocorrection(true)
+                            .textInputAutocapitalization(.sentences)
+                            .submitLabel(.done)
+                            .focused($focusedField, equals: .description)
                     }
                     
                     Section("Priority") {
@@ -55,6 +62,17 @@ struct AddTaskView: View {
                             .frame(maxHeight: 400)
                     }
                 }
+                .onAppear {
+                    focusedField = .task
+                }
+                .onSubmit {
+                    switch focusedField {
+                    case .task:
+                        focusedField = .description
+                    default:
+                        print("Done!")
+                    }
+                }
             }
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
@@ -65,9 +83,8 @@ struct AddTaskView: View {
                         dismiss()
                     } label: {
                         Text("Save")
-                            .disabled(disabledSave)
-                            //.foregroundColor(disabledSave ? .gray : .blue)
                     }
+                    .disabled(disabledSave)
                 }
                 
                 ToolbarItem(placement: .navigationBarLeading) {
@@ -82,14 +99,6 @@ struct AddTaskView: View {
         }
     }
 }
-
-#if canImport(UIKit)
-extension View {
-    func hideKeyboard() {
-        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
-    }
-}
-#endif
 
 struct AddTaskView_Previews: PreviewProvider {
     static var previews: some View {

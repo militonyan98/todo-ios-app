@@ -46,8 +46,8 @@
             filePath = "ToDo/AddTaskView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
@@ -80,6 +80,54 @@
                   startingLineNumber = "36"
                   endingLineNumber = "36"
                   offsetFromSymbolStart = "640">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C59FC45C-56DF-4D4C-990D-9EAE82159379"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ToDo/EditTaskView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "C59FC45C-56DF-4D4C-990D-9EAE82159379 - 94cd2d137db4b936"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.navigationBarBackButtonHidden(Swift.Bool) -&gt; some&gt;&gt;.0 in ToDo.EditTaskView.body.getter : some"
+                  moduleName = "ToDo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/herminemilitonyan/Desktop/development/ToDo/ToDo/EditTaskView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "312">
+               </Location>
+               <Location
+                  uuid = "C59FC45C-56DF-4D4C-990D-9EAE82159379 - 648ab8f43391801c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.onSubmit(of: SwiftUI.SubmitTriggers, _: () -&gt; ()) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.navigationBarBackButtonHidden(Swift.Bool) -&gt; some&gt;&gt;.0 in ToDo.EditTaskView.body.getter : some"
+                  moduleName = "ToDo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/herminemilitonyan/Desktop/development/ToDo/ToDo/EditTaskView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "464">
                </Location>
             </Locations>
          </BreakpointContent>
