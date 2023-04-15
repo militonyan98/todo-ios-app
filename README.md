@@ -1,6 +1,6 @@
+![App Icon](https://github.com/militonyan98/todo-ios-app/blob/main/icon.jpeg?raw=true)
 
-
-# ![App Icon](https://github.com/militonyan98/todo-ios-app/blob/main/icon.jpeg?raw=true) TODO APPLICATION - iOS SWIFT UI
+# TODO APPLICATION - iOS SWIFT UI
 
 
 ## Main functionality
@@ -31,4 +31,9 @@
 
 ## Screenshots
 
-_Section under review_
+![Main View](https://github.com/militonyan98/todo-ios-app/blob/main/Screenshots/SCREEN1.png?raw=true)
+
+![Add View](https://github.com/militonyan98/todo-ios-app/blob/main/Screenshots/SCREEN2.png?raw=true)
+
+
+![Detail View](https://github.com/militonyan98/todo-ios-app/blob/main/Screenshots/SCREEN3.png?raw=true)
