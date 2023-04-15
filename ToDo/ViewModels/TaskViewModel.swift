@@ -17,7 +17,6 @@ class TaskViewModel: ObservableObject {
     
     
     func fetchTaskData() {
-        
         do {
             tasksDB = try dataController!.moc.fetch(TaskDB.fetchRequest())
             tasks.removeAll()
@@ -28,7 +27,7 @@ class TaskViewModel: ObservableObject {
                 tasks.append(task)
             }
         } catch {
-            print("DEBUG: Some error occured while fetching")
+            print("An error occured while fetching")
         }
     }
     
@@ -97,8 +96,6 @@ class TaskViewModel: ObservableObject {
                     break
                 }
             }
-            
-            
         }
         
         save()
@@ -106,7 +103,6 @@ class TaskViewModel: ObservableObject {
     
     func save() {
         let moc = dataController!.moc
-        
         try? moc.save()
         
         fetchTaskData()

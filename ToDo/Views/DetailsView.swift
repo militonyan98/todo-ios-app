@@ -17,24 +17,19 @@ struct DetailsView: View {
     @State private var date = Date.now
     
     var body: some View {
-            //Color.blue.opacity(0.1)
-            
             VStack {
                 Spacer()
-                //Divider()
                 
                 VStack {
                     Text("Task: ")
                         .font(.headline)
                         .fontWeight(.semibold)
                         .padding()
-                    //Divider()
+                    
                     Text("\(task)")
                 }
-                //.frame(width: 250, height: 50)
                 .padding()
                 
-                //Spacer()
                 Divider()
                 
                 VStack {
@@ -42,7 +37,7 @@ struct DetailsView: View {
                         .font(.headline)
                         .fontWeight(.semibold)
                         .padding()
-                    //Divider()
+                    
                     Text("\(description)")
                         .fixedSize(horizontal: false, vertical: true)
                     Spacer()
@@ -50,7 +45,6 @@ struct DetailsView: View {
                 .frame(height: 120)
                 .padding()
                 
-                //Spacer()
                 Divider()
                 
                 VStack {
@@ -58,16 +52,14 @@ struct DetailsView: View {
                         .font(.headline)
                         .fontWeight(.semibold)
                         .padding()
-                    //Divider()
+                    
                     Text("\(priority.title)")
                         .foregroundColor(tasksVM.findByID(id: taskID)?.priority.color ?? .primary)
                         .fontWeight(.semibold)
                     
                 }
-                //.frame(width: 250, height: 50)
                 .padding()
                 
-                //Spacer()
                 Divider()
                 
                 VStack {
@@ -75,15 +67,12 @@ struct DetailsView: View {
                         .font(.headline)
                         .fontWeight(.semibold)
                         .padding()
-                    //Divider()
+                    
                     Text("\(date.formatted())")
                 }
-                //.frame(width: 250, height: 50)
                 .padding()
                 
                 Spacer()
-                //Divider()
-                
             }
             .navigationTitle(task)
             .navigationBarTitleDisplayMode(.inline)

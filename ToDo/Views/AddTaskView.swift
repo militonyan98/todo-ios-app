@@ -27,7 +27,7 @@ struct AddTaskView: View {
             }
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    ButtonView(roll: .save, action: addTaskAction, disabledSave: disabledSave)
+                    ButtonView(roll: .save, action: addTask, disabledSave: disabledSave)
                 }
                 
                 ToolbarItem(placement: .navigationBarLeading) {
@@ -37,7 +37,7 @@ struct AddTaskView: View {
         }
     }
     
-    func addTaskAction() {
+    func addTask() {
         let newTask = Task(name: task, description: description, priority: priority, date: date)
         self.tasksVM.add(task: newTask)
         

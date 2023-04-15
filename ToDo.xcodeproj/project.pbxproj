@@ -22,6 +22,12 @@
 		0F28F4B629E99F520097467C /* FocusedField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F28F4B529E99F520097467C /* FocusedField.swift */; };
 		0F28F4BC29E9A5670097467C /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F28F4BB29E9A5670097467C /* ButtonView.swift */; };
 		0F28F4BE29E9F32F0097467C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F28F4BD29E9F32F0097467C /* Assets.xcassets */; };
+		0F28F4C029EAF45C0097467C /* ProcessTaskRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F28F4BF29EAF45C0097467C /* ProcessTaskRowView.swift */; };
+		0F28F4C229EAF5180097467C /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F28F4C129EAF5180097467C /* Action.swift */; };
+		0F28F4C429EAF6EC0097467C /* SortType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F28F4C329EAF6EC0097467C /* SortType.swift */; };
+		0F28F4C629EAF7160097467C /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F28F4C529EAF7160097467C /* Priority.swift */; };
+		0F28F4C929EAF9B80097467C /* TextFieldLimitInputLenghtExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F28F4C829EAF9B80097467C /* TextFieldLimitInputLenghtExtension.swift */; };
+		0F28F4CB29EAFB040097467C /* TapGestureRecognizerExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F28F4CA29EAFB040097467C /* TapGestureRecognizerExtention.swift */; };
 		0F455F1629BB7C4B00F9DCBD /* ToDoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F455F1529BB7C4B00F9DCBD /* ToDoApp.swift */; };
 		0F455F1829BB7C4B00F9DCBD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F455F1729BB7C4B00F9DCBD /* ContentView.swift */; };
 		0F455F1D29BB7C4D00F9DCBD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F455F1C29BB7C4D00F9DCBD /* Preview Assets.xcassets */; };
@@ -36,8 +42,8 @@
 /* Begin PBXFileReference section */
 		0F28F39D29C8C9ED0097467C /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		0F28F3A029CA17500097467C /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
-		0F28F3AA29CA7D480097467C /* TaskDB+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaskDB+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		0F28F3AB29CA7D480097467C /* TaskDB+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaskDB+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		0F28F3AA29CA7D480097467C /* TaskDB+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "TaskDB+CoreDataClass.swift"; path = "ToDo/TaskDB+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		0F28F3AB29CA7D480097467C /* TaskDB+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "TaskDB+CoreDataProperties.swift"; path = "ToDo/TaskDB+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		0F28F48A29D4F2A60097467C /* TextFieldLimitModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldLimitModifier.swift; sourceTree = "<group>"; };
 		0F28F48C29D5EFB20097467C /* EditTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskView.swift; sourceTree = "<group>"; };
 		0F28F48E29DE171B0097467C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -50,6 +56,12 @@
 		0F28F4B529E99F520097467C /* FocusedField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusedField.swift; sourceTree = "<group>"; };
 		0F28F4BB29E9A5670097467C /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		0F28F4BD29E9F32F0097467C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Downloads/AppIcons/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		0F28F4BF29EAF45C0097467C /* ProcessTaskRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessTaskRowView.swift; sourceTree = "<group>"; };
+		0F28F4C129EAF5180097467C /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		0F28F4C329EAF6EC0097467C /* SortType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortType.swift; sourceTree = "<group>"; };
+		0F28F4C529EAF7160097467C /* Priority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Priority.swift; sourceTree = "<group>"; };
+		0F28F4C829EAF9B80097467C /* TextFieldLimitInputLenghtExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldLimitInputLenghtExtension.swift; sourceTree = "<group>"; };
+		0F28F4CA29EAFB040097467C /* TapGestureRecognizerExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapGestureRecognizerExtention.swift; sourceTree = "<group>"; };
 		0F455F1229BB7C4B00F9DCBD /* ToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F455F1529BB7C4B00F9DCBD /* ToDoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoApp.swift; sourceTree = "<group>"; };
 		0F455F1729BB7C4B00F9DCBD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +85,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F28F4C729EAF9620097467C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0F28F4C829EAF9B80097467C /* TextFieldLimitInputLenghtExtension.swift */,
+				0F28F4CA29EAFB040097467C /* TapGestureRecognizerExtention.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0F28F4CC29EAFB590097467C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0F455F1729BB7C4B00F9DCBD /* ContentView.swift */,
+				0F455F2729BB998D00F9DCBD /* AddTaskView.swift */,
+				0F28F48C29D5EFB20097467C /* EditTaskView.swift */,
+				0F28F4B329E99D250097467C /* TaskFormView.swift */,
+				0F28F4BB29E9A5670097467C /* ButtonView.swift */,
+				0F28F4B129E99C8B0097467C /* TaskDateView.swift */,
+				0F28F4AF29E99B290097467C /* TaskPriorityPickerView.swift */,
+				0F28F4AB29E998FB0097467C /* TaskNameTextFieldView.swift */,
+				0F28F4AD29E999ED0097467C /* TaskDescriptionTextFieldView.swift */,
+				0F455F2529BB91BE00F9DCBD /* TaskView.swift */,
+				0F455F2929BBA5E100F9DCBD /* SortPickerView.swift */,
+				0F28F4BF29EAF45C0097467C /* ProcessTaskRowView.swift */,
+				0F455F2B29BBA78800F9DCBD /* TaskListView.swift */,
+				0F28F48F29E5D24D0097467C /* DetailsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0F28F4CD29EAFB860097467C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0F455F2329BB7CDB00F9DCBD /* TaskModel.swift */,
+				0F28F4C529EAF7160097467C /* Priority.swift */,
+				0F28F4C329EAF6EC0097467C /* SortType.swift */,
+				0F28F4C129EAF5180097467C /* Action.swift */,
+				0F28F4B529E99F520097467C /* FocusedField.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0F28F4CE29EAFBF30097467C /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				0F28F48A29D4F2A60097467C /* TextFieldLimitModifier.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		0F28F4CF29EAFC700097467C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				0F455F2D29BBE2B100F9DCBD /* TaskViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		0F28F4D029EAFD130097467C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0F28F39D29C8C9ED0097467C /* DataController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		0F455F0929BB7C4B00F9DCBD = {
 			isa = PBXGroup;
 			children = (
@@ -93,27 +171,15 @@
 		0F455F1429BB7C4B00F9DCBD /* ToDo */ = {
 			isa = PBXGroup;
 			children = (
+				0F455F1529BB7C4B00F9DCBD /* ToDoApp.swift */,
 				0F28F3AA29CA7D480097467C /* TaskDB+CoreDataClass.swift */,
 				0F28F3AB29CA7D480097467C /* TaskDB+CoreDataProperties.swift */,
-				0F455F1529BB7C4B00F9DCBD /* ToDoApp.swift */,
-				0F455F1729BB7C4B00F9DCBD /* ContentView.swift */,
-				0F455F2D29BBE2B100F9DCBD /* TaskViewModel.swift */,
-				0F28F4B529E99F520097467C /* FocusedField.swift */,
-				0F455F2329BB7CDB00F9DCBD /* TaskModel.swift */,
-				0F455F2729BB998D00F9DCBD /* AddTaskView.swift */,
-				0F28F4B329E99D250097467C /* TaskFormView.swift */,
-				0F28F4B129E99C8B0097467C /* TaskDateView.swift */,
-				0F28F48C29D5EFB20097467C /* EditTaskView.swift */,
-				0F28F4BB29E9A5670097467C /* ButtonView.swift */,
-				0F28F4AF29E99B290097467C /* TaskPriorityPickerView.swift */,
-				0F28F4AB29E998FB0097467C /* TaskNameTextFieldView.swift */,
-				0F28F4AD29E999ED0097467C /* TaskDescriptionTextFieldView.swift */,
-				0F28F48A29D4F2A60097467C /* TextFieldLimitModifier.swift */,
-				0F455F2529BB91BE00F9DCBD /* TaskView.swift */,
-				0F455F2929BBA5E100F9DCBD /* SortPickerView.swift */,
-				0F455F2B29BBA78800F9DCBD /* TaskListView.swift */,
-				0F28F48F29E5D24D0097467C /* DetailsView.swift */,
-				0F28F39D29C8C9ED0097467C /* DataController.swift */,
+				0F28F4CF29EAFC700097467C /* ViewModels */,
+				0F28F4CC29EAFB590097467C /* Views */,
+				0F28F4CD29EAFB860097467C /* Models */,
+				0F28F4CE29EAFBF30097467C /* ViewModifiers */,
+				0F28F4C729EAF9620097467C /* Extensions */,
+				0F28F4D029EAFD130097467C /* Controllers */,
 				0F28F4BD29E9F32F0097467C /* Assets.xcassets */,
 				0F455F1B29BB7C4D00F9DCBD /* Preview Content */,
 				0F28F39F29CA17500097467C /* Main.xcdatamodeld */,
@@ -203,6 +269,7 @@
 				0F28F39E29C8C9ED0097467C /* DataController.swift in Sources */,
 				0F28F4BC29E9A5670097467C /* ButtonView.swift in Sources */,
 				0F455F2C29BBA78800F9DCBD /* TaskListView.swift in Sources */,
+				0F28F4CB29EAFB040097467C /* TapGestureRecognizerExtention.swift in Sources */,
 				0F28F3AD29CA7D480097467C /* TaskDB+CoreDataProperties.swift in Sources */,
 				0F28F48D29D5EFB20097467C /* EditTaskView.swift in Sources */,
 				0F455F2429BB7CDB00F9DCBD /* TaskModel.swift in Sources */,
@@ -212,15 +279,20 @@
 				0F28F4B229E99C8B0097467C /* TaskDateView.swift in Sources */,
 				0F455F2A29BBA5E100F9DCBD /* SortPickerView.swift in Sources */,
 				0F28F48B29D4F2A60097467C /* TextFieldLimitModifier.swift in Sources */,
+				0F28F4C429EAF6EC0097467C /* SortType.swift in Sources */,
+				0F28F4C229EAF5180097467C /* Action.swift in Sources */,
 				0F28F4B429E99D250097467C /* TaskFormView.swift in Sources */,
 				0F455F1829BB7C4B00F9DCBD /* ContentView.swift in Sources */,
 				0F28F49029E5D24D0097467C /* DetailsView.swift in Sources */,
 				0F455F2E29BBE2B100F9DCBD /* TaskViewModel.swift in Sources */,
 				0F455F1629BB7C4B00F9DCBD /* ToDoApp.swift in Sources */,
+				0F28F4C029EAF45C0097467C /* ProcessTaskRowView.swift in Sources */,
 				0F28F4AC29E998FB0097467C /* TaskNameTextFieldView.swift in Sources */,
 				0F455F2629BB91BE00F9DCBD /* TaskView.swift in Sources */,
+				0F28F4C629EAF7160097467C /* Priority.swift in Sources */,
 				0F28F4AE29E999ED0097467C /* TaskDescriptionTextFieldView.swift in Sources */,
 				0F28F4B029E99B290097467C /* TaskPriorityPickerView.swift in Sources */,
+				0F28F4C929EAF9B80097467C /* TextFieldLimitInputLenghtExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

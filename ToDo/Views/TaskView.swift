@@ -18,11 +18,11 @@ struct TaskView: View {
                 VStack(alignment: .leading) {
                     Text("Task")
                         .font(.caption)
+                    
                     Text(task.name)
                         .font(.title3)
                         .bold()
                 }
-                //.padding(.bottom)
                 
                 Divider()
                     .overlay(.white.opacity(1))
@@ -30,17 +30,16 @@ struct TaskView: View {
                 VStack(alignment: .leading) {
                     Text("Description")
                         .font(.caption)
+                    
                     Text(task.description)
                         .font(.headline)
                         .fontWeight(.semibold)
-                        //.bold()
                         .italic()
                 }
             }
             .frame(maxWidth: .infinity)
             .padding(10)
             
-            //Spacer()
             Divider()
                 .overlay(.white.opacity(1))
             
@@ -48,6 +47,7 @@ struct TaskView: View {
                 VStack(alignment: .leading) {
                     Text("Date")
                         .font(.caption)
+                    
                     Text(task.date, format: .dateTime.day().month().year())
                         .font(.headline)
                         .fontWeight(.regular)
@@ -55,10 +55,9 @@ struct TaskView: View {
                         .minimumScaleFactor(0.5)
                         .lineLimit(1)
                 }
-                //.padding()
             }
             .frame(maxWidth: .infinity)
-            .padding(10) //
+            .padding(10)
 
         }
         .frame(width: 350.0, height: 100)
@@ -66,7 +65,6 @@ struct TaskView: View {
         .overlay {
             RoundedRectangle(cornerRadius: 10)
                 .foregroundColor(task.priority.color.opacity(0.4))
-                //.stroke(task.priority.color, lineWidth: 2)
         }
     }
 }

@@ -18,9 +18,3 @@ struct TextFieldLimitModifer: ViewModifier {
             }
     }
 }
-
-extension View {
-    func limitInputLength(value: Binding<String>, length: Int) -> some View {
-        self.modifier(TextFieldLimitModifer(value: value, length: length))
-    }
-}
