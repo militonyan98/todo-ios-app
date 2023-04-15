@@ -1,4 +1,7 @@
-![App Icon](https://github.com/militonyan98/todo-ios-app/blob/main/icon.jpeg?raw=true)
+<p align="center">
+  <img width="300" height="300" src="https://github.com/militonyan98/todo-ios-app/blob/main/icon.jpeg?raw=true">
+</p>
+![App Icon]()
 
 # TODO APPLICATION - iOS SWIFT UI
 
@@ -30,10 +33,11 @@
 
 
 ## Screenshots
-
-![Main View](https://github.com/militonyan98/todo-ios-app/blob/main/Screenshots/SCREEN1.png?raw=true)
-
-![Add View](https://github.com/militonyan98/todo-ios-app/blob/main/Screenshots/SCREEN2.png?raw=true)
-
-
-![Detail View](https://github.com/militonyan98/todo-ios-app/blob/main/Screenshots/SCREEN3.png?raw=true)
+<p align="center">
+ <img width="32%" src="https://github.com/militonyan98/todo-ios-app/blob/main/Screenshots/SCREEN1.png?raw=true">
+ 
+ <img width="32%" src="https://github.com/militonyan98/todo-ios-app/blob/main/Screenshots/SCREEN2.png?raw=true">
+ 
+ <img width="32%" src="https://github.com/militonyan98/todo-ios-app/blob/main/Screenshots/SCREEN3.png?raw=true">
+  
+</p>
