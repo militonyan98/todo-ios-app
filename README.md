@@ -1,4 +1,6 @@
-#  TODO APPLICATION - iOS SWIFT UI
+
+
+# ![App Icon](https://github.com/militonyan98/todo-ios-app/blob/main/icon.jpeg?raw=true) TODO APPLICATION - iOS SWIFT UI
 
 
 ## Main functionality
@@ -21,6 +23,10 @@
 * SwiftUI
 * Core Data
 * MVVM
+
+## App Video
+
+[![](https://markdown-videos.deta.dev/youtube/D0Jp-6dH8RA)](https://www.youtube.com/shorts/D0Jp-6dH8RA)
 
 
 ## Screenshots
