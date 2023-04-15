@@ -17,7 +17,6 @@ struct DetailsView: View {
     @State private var date = Date.now
     
     var body: some View {
-        ZStack {
             //Color.blue.opacity(0.1)
             
             VStack {
@@ -101,8 +100,6 @@ struct DetailsView: View {
                 priority = taskModel?.priority ?? .normal
                 date = taskModel?.date ?? Date.now
             }
-        }
-        .ignoresSafeArea()
     }
 }
 

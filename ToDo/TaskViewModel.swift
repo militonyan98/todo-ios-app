@@ -41,14 +41,13 @@ class TaskViewModel: ObservableObject {
         if searchText.isEmpty {
             return tasks
         } else {
-            return tasks.filter { $0.name.localizedCaseInsensitiveContains(searchText)
-            }
+            return tasks.filter { $0.name.localizedCaseInsensitiveContains(searchText) }
         }
     }
     
     var sortedTasks: [Task] {
         if sortType == .alphabetical {
-            return filteredTasks.sorted { $0.name < $1.name }
+            return filteredTasks.sorted { $0.name.lowercased() < $1.name.lowercased() }
         }
         
         if sortType == .date {

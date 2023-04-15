@@ -49,6 +49,23 @@ struct ProcessTaskRowView: View {
             .opacity(0)
             
             TaskView(tasksVM: tasksVM, task: tasksVM.sortedTasks[index])
+                .contextMenu {
+                    Button(role: .destructive) {
+                        tasksVM.remove(at: IndexSet(arrayLiteral: index))
+                    } label: {
+                        Label("Delete", systemImage: "trash.fill")
+                    }
+                    
+                    Button {
+                        action = .edit    // specific action
+                        isActive = true
+                    } label: {
+                        Label("Edit", systemImage: "pencil")
+                            //.frame(width: 100)
+                    }
+                    .tint(.yellow)
+                }
+
                 //.listRowSeparator(.hidden)
         }
         //.listRowSeparator(.hidden)
@@ -58,7 +75,7 @@ struct ProcessTaskRowView: View {
             } label: {
                 Label("Delete", systemImage: "trash.fill")
             }
-            
+
             Button {
                 action = .edit    // specific action
                 isActive = true
