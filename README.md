@@ -2,7 +2,7 @@
   <img width="300" height="300" src="https://github.com/militonyan98/todo-ios-app/blob/main/icon.jpeg?raw=true">
 </p>
 
-# TODO APPLICATION - iOS SWIFT UI
+# TODO APPLICATION - iOS SwiftUI
 
 
 ## Main functionality
